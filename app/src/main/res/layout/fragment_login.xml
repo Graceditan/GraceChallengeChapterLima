@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="20sp"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:text="LOGIN"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_margin="20sp"
+        android:src="@drawable/ic_login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:ignore="ContentDescription" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/login_email"
+            android:background="@drawable/kotak"
+            android:hint="Masukkan Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,TextFields"
+            android:layout_marginBottom="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:background="@drawable/kotak"
+            android:id="@+id/login_password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:hint="Masukan Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnLogin"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_register"
+        android:background="@color/teal_200"
+        android:text="Belum Punya akun? Register"
+        android:textSize="20sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
